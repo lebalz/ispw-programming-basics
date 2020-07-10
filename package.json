@@ -1,0 +1,37 @@
+{
+    "name": "ispw-programming-basics",
+    "displayName": "ispw-programming-basics",
+    "description": "extension pack for the programming basics seminar",
+	"publisher": "lebalz",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.47.0"
+    },
+    "categories": [
+        "Extension Packs"
+    ],
+    "galleryBanner": {
+        "color": "#ffffff",
+        "theme": "light"
+    },
+	"homepage": "https://github.com/lebalz/ispw-programming-basics/blob/master/README.md",
+	"bugs": {
+		"url": "https://github.com/lebalz/ispw-programming-basics/issues"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/lebalz/ispw-programming-basics"
+	},
+    "icon": "logo.png",
+    "extensionPack": [
+        "lebalz.git2go",
+        "lebalz.python2go",
+        "ms-python.python",
+        "bierner.markdown-preview-github-styles",
+        "mhutchie.git-graph",
+        "LittleFoxTeam.vscode-python-test-adapter",
+        "hbenl.vscode-test-explorer",
+        "formulahendry.code-runner"
+    ]
+}
