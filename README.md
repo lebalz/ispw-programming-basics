@@ -4,14 +4,14 @@
 
 This extension pack adds the following vs code plugins:
 
-- [lebalz.git2go](https://marketplace.visualstudio.com/items?itemName=lebalz.git2go)
-- [lebalz.python2go](https://marketplace.visualstudio.com/items?itemName=lebalz.python2go)
-- [ms-python.python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
-- [bierner.markdown-preview-github-styles](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
-- [mhutchie.git-graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
-- [LittleFoxTeam.vscode-python-test-adapter](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
-- [hbenl.vscode-test-explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
-- [formulahendry.code-runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
+- [Git2Go](https://marketplace.visualstudio.com/items?itemName=lebalz.git2go)
+- [Python2Go](https://marketplace.visualstudio.com/items?itemName=lebalz.python2go)
+- [Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)
+- [Markdown Preview Github Styles](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph)
+- [Python Test Adapter](https://marketplace.visualstudio.com/items?itemName=LittleFoxTeam.vscode-python-test-adapter)
+- [Test Explorer](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer)
+- [Code Runner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner)
 
 
 ## Installation

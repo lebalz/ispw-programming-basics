@@ -1,18 +1,11 @@
 {
     "name": "ispw-programming-basics",
-    "displayName": "ispw-programming-basics",
-    "description": "extension pack for the programming basics seminar",
+    "displayName": "ISPW Programming Basics",
 	"publisher": "lebalz",
+    "description": "extension pack for the programming basics seminar",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.47.0"
-    },
-    "categories": [
-        "Extension Packs"
-    ],
-    "galleryBanner": {
-        "color": "#ffffff",
-        "theme": "light"
     },
 	"homepage": "https://github.com/lebalz/ispw-programming-basics/blob/master/README.md",
 	"bugs": {
@@ -23,7 +16,14 @@
 		"type": "git",
 		"url": "https://github.com/lebalz/ispw-programming-basics"
 	},
+    "galleryBanner": {
+        "color": "#ffffff",
+        "theme": "light"
+    },
     "icon": "logo.png",
+    "categories": [
+        "Extension Packs"
+    ],
     "extensionPack": [
         "lebalz.git2go",
         "lebalz.python2go",
