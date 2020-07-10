@@ -2,6 +2,8 @@
 
 ![ispw](logo.png)
 
+Install the extension from the [Marketplace](https://marketplace.visualstudio.com/items?itemName=lebalz.ispw-programming-basics).
+
 This extension pack adds the following vs code plugins:
 
 - [Git2Go](https://marketplace.visualstudio.com/items?itemName=lebalz.git2go)
