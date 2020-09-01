@@ -17,7 +17,6 @@ function configure(
     }
     return new Promise((resolve) => resolve());
   }
-  vscode.window.showInformationMessage(`Configure vs code`);
   return setGistConfig().then((settings) => {
     const successful = settings.filter(
       (s) => s.updated && s.name !== "files.exclude"
