@@ -3,7 +3,7 @@
     "displayName": "ISPW Programming Basics",
     "publisher": "lebalz",
     "description": "extension pack for the programming basics seminar",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -99,6 +99,6 @@
     "dependencies": {
         "@types/lodash": "^4.14.161",
         "axios": "^0.19.0",
-        "loadsh": "^0.0.4"
+        "lodash": "^4.17.20"
     }
 }
