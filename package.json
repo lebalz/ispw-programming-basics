@@ -3,7 +3,7 @@
     "displayName": "ISPW Programming Basics",
     "publisher": "lebalz",
     "description": "extension pack for the programming basics seminar",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -59,7 +59,7 @@
                 "ispw.ignoreConfigurations": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Wheter to ignore additional configuration settings performed by the gbsl extension"
+                    "description": "Wheter to ignore additional configuration settings performed by the ispw extension"
                 },
                 "ispw.ignorePipInstall": {
                     "type": "boolean",

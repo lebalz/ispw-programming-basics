@@ -2,6 +2,7 @@
 // Import the module and reference it with the alias vscode in your code below
 import * as vscode from "vscode";
 import { setGistConfig } from "./configFromGist";
+import { Logger } from "./logger";
 
 function configure(
   force: boolean = false,
@@ -9,13 +10,13 @@ function configure(
 ): Promise<number> {
   const configuration = vscode.workspace.getConfiguration();
   const skip = configuration.get("ispw.ignoreConfigurations", false);
-  if (skip) {
+  if (skip && !force) {
     if (!silent) {
       vscode.window.showInformationMessage(
         "ISPW Configuration is ignored. Edit your settings"
       );
     }
-    return new Promise((resolve) => resolve());
+    return new Promise((resolve) => resolve(0));
   }
   return setGistConfig().then((settings) => {
     const successful = settings.filter(
@@ -27,19 +28,19 @@ function configure(
         ? `could not update ${err.map((s) => s.name).join(", ")}`
         : `could not update ${err.length} settings`;
     if (successful.length > 5) {
-      vscode.window.showInformationMessage(
+      Logger.log(
         `configured ${successful.length} settings${
           err.length > 0 ? errMsg : ""
         }`
       );
     } else if (successful.length > 0) {
-      vscode.window.showInformationMessage(
+      Logger.log(
         `configured ${successful.map((s) => s.name).join(", ")} ${
           err.length > 0 ? errMsg : ""
         }`
       );
     } else if (err.length > 0) {
-      vscode.window.showWarningMessage(errMsg);
+      Logger.log(errMsg);
     }
     return successful.length;
   });
@@ -48,11 +49,19 @@ function configure(
 // this method is called when your extension is activated
 // your extension is activated the very first time the command is executed
 export function activate(context: vscode.ExtensionContext) {
+  Logger.configure("ispw-programming-basics", "ISPW");
+
   const configuration = vscode.workspace.getConfiguration();
 
   if (!configuration.get("ispw.ignoreConfigurations", false)) {
     configure(false, true);
   }
+
+  vscode.workspace.onDidChangeConfiguration((e) => {
+    if (e.affectsConfiguration("ispw.gistConfigurationUrl")) {
+      configure();
+    }
+  });
 
   let configureDisposer = vscode.commands.registerCommand(
     "ispw.configure",
@@ -69,7 +78,7 @@ export function activate(context: vscode.ExtensionContext) {
           }
         )
         .then(() => {
-          vscode.window.showInformationMessage("Configured ISPW settings");
+          Logger.log("Configured ISPW settings");
         });
     }
   );

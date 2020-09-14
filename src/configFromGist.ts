@@ -4,7 +4,7 @@ import * as _ from "lodash";
 
 function vscodeConfigFromGist(): Promise<Object> {
   const config = vscode.workspace.getConfiguration();
-  const gistUrl = config.get("gbsl.gistConfigurationUrl");
+  const gistUrl = config.get("ispw.gistConfigurationUrl");
   if (!gistUrl || gistUrl === "") {
     return new Promise((resolve) => resolve({}));
   }
