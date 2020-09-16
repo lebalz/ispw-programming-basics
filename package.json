@@ -3,7 +3,7 @@
     "displayName": "ISPW Programming Basics",
     "publisher": "lebalz",
     "description": "extension pack for the programming basics seminar",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -40,7 +40,9 @@
         "christian-kohler.path-intellisense",
         "zhuangtongfa.material-theme",
         "ms-python.vscode-pylance",
-        "VisualStudioExptTeam.vscodeintellicode"
+        "VisualStudioExptTeam.vscodeintellicode",
+        "koehlma.markdown-math",
+        "bierner.markdown-mermaid"
     ],
     "activationEvents": [
         "onStartupFinished"
