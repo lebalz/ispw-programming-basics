@@ -3,7 +3,7 @@
     "displayName": "ISPW Programming Basics",
     "publisher": "lebalz",
     "description": "extension pack for the programming basics seminar",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "engines": {
         "vscode": "^1.47.0"
     },
@@ -70,7 +70,7 @@
                 },
                 "ispw.gistConfigurationUrl": {
                     "type": "string",
-                    "default": "https://gist.github.com/lebalz/c2c67cd282f8b4d1ce244eed1f648b38",
+                    "default": "https://gist.github.com/xeniades/9c6384963c4bbfbd6b43224359cb1e10",
                     "description": "Github gist url where the default configuration is downloaded from"
                 }
             }
